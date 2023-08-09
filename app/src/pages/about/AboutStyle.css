@@ -1,0 +1,77 @@
+:root {
+    --brown: rgb(35, 31, 16);
+    --ultra-brown: RGB(66, 59, 32);
+    --light-brown: RGB(115, 102, 53);
+    --gold: rgb(132, 129, 22);
+    --ultra-gold: rgb(177, 184, 0);
+    --platinum: RGB(172,175,172);
+    --blue-platinum: rgb(186, 255, 250);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-description {
+  margin: 1rem;
+  width: 45%;
+  border: 1px solid var(--platinum);
+  border-radius: 0.35rem;
+  background-color: var(--light-brown);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+strong {
+  color: var(--ultra-brown);
+}
+
+.card-info {
+  flex: 1;
+  text-align: right;
+  margin: 1rem;
+}
+
+.card-info img{
+  width: 95%;
+  height: 35rem;
+  border-radius: 0.35rem;
+  border: 1px solid var(--platinum);
+}
+
+.info-container {
+  display: flex;
+  margin-left: 2rem;
+  justify-content: space-between;
+}
+
+h6 {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--platinum);
+}
+
+.tooltip {
+  color: var(--platinum);
+  margin-top: 2px;
+}

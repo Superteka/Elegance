@@ -1,0 +1,57 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "eslint:recommended",
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": { "jsx": true },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "object-curly-newline": "off",
+      "no-unused-vars": "off",
+      "arrow-body-style": "off",
+      "comma-dangle": "off",
+      "no-shadow": "off",
+      "no-unused-expressions": "off",
+      "no-param-reassign": "off",
+      "radix": "off",
+      "no-undef": "off",
+      "react/prop-types": "off",
+      "jsx-a11y/control-has-associated-label": "off",
+      "@typescript-eslint/no-unused-vars": "off", // No problem here
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/camelcase": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": ["error"],
+      "react/react-in-jsx-scope": "off",
+      "import/no-unresolved": "off",
+      "semi": "off",
+      "linebreak-style": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/no-array-index-key": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/require-default-props": ["off"],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+      "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
+    },
+    "settings": {
+      "import/resolver": {
+        "alias": { "map": [["@", "./src"]] },
+        "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+      }
+    }
+  }

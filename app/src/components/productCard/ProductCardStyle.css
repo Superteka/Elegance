@@ -1,0 +1,71 @@
+:root {
+    --brown: rgb(35, 31, 16);
+    --gold: RGB(132, 129, 22);
+    --ultra-gold: RGB(177, 184, 0);
+    --platinum-light: rgb(227, 249, 227);
+    --platinum: RGB(172,175,172);
+    --blue-platinum: rgb(186, 255, 250);
+}  
+
+.product-card {
+    margin: 0;
+    width: 18rem; 
+    height: 25rem;
+    border: 1px solid var(--platinum);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    border-color: var(--blue-platinum);
+    box-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 10px black;
+    color: var(--brown);
+    background-image: url('../../assets/background-card.jpg');
+    color: var(--platinum-light);
+}
+
+.product-card-title {
+    color: black;
+    -webkit-text-stroke: 1px var(--platinum-light);
+    text-shadow: 0 0 3px whitesmoke;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
+}
+
+.product-card-body {
+    height: 90%;
+}
+
+.product-card img {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-bottom: 16px;
+    box-shadow: 0 0 5px 1px var(--blue-platinum);
+}
+
+.product-btn {
+    width: 100%;
+}
+  
+.intensity-card {
+    display: flex;
+}
+  
+.intensity-ball-card {
+    width: 5px;
+    height: 5px;
+    margin-top: 8px;
+    margin-left: 4px;
+    border-radius: 0.5rem;
+}
+  
+.intensity-ball-card.filled {
+    background-color: var(--platinum);
+    box-shadow: 0 0 0 1px white;
+}
+
+.intensity-ball-card.empty {
+    background-color: var(--brown);
+    box-shadow: 0 0 0 1px var(--blue-platinum)
+}
+  

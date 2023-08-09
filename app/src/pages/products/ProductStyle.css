@@ -1,0 +1,63 @@
+:root {
+  --sun: rgb(255, 167, 43);
+  --platinum-light: rgb(227, 249, 227);
+  --platinum: RGB(172,175,172);
+  --gold: RGB(132, 129, 22);
+}
+
+.container-detail {
+    margin: 1rem;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 1rem;
+  }
+  
+  .detail-img {
+    width: 75%;
+    height: auto;
+    float: left;
+  }
+  
+  .description {
+    float: left;
+    margin-top: 1rem;
+    margin-left: -7rem; 
+    width: 18rem;
+    font-size: 2rem;
+    color: var(--platinum);
+    text-shadow: 0 0 2px var(--platinum-light);
+  }
+  
+  .intensity {
+    display: flex;
+    flex-direction: column; 
+    margin-top: -37rem;
+    margin-left: 1rem;
+}
+  
+.ball {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 6rem;
+    border-radius: 0.5rem;
+}
+  
+.ball.filled {
+    background-color: var(--platinum);
+    box-shadow: 0 0 5px 1px black;
+  }
+  
+.ball.empty {
+    background-color: transparent;
+    box-shadow: 0 0 5px var(--platinum-light);
+}
+
+.carousel-container {
+  width: 55%;
+  position: absolute;
+  margin-top: -36rem;
+  margin-left: 42rem;
+} 

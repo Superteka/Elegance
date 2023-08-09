@@ -1,0 +1,40 @@
+  :root {
+    --brown: RGB(35, 31, 16);
+    --light-brown: RGB(115, 102, 53);
+    --gold: RGB(132, 129, 22);
+    --ultra-gold: RGB(177, 184, 0);
+    --platinum: RGB(172,175,172);
+    --blue-platinum: rgb(186, 255, 250);
+  }
+  
+  .input-container {
+    color: var(--platinum);
+    text-shadow: 0 0 4px black;
+  }
+
+  .form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0.35rem;
+  }
+  
+  .form-input label {
+    text-align: left;
+  }
+  
+  .form-input input {
+    width: 100%;
+  }
+  
+  .form-button {
+    width: 100%;
+    margin-top: auto;
+    margin-left: 3px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  

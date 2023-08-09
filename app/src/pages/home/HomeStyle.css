@@ -1,0 +1,54 @@
+:root {
+    --brown: rgb(35, 31, 16);
+    --ultra-brown: RGB(66, 59, 32);
+    --light-brown: RGB(115, 102, 53);
+    --gold: rgb(132, 129, 22);
+    --ultra-gold: rgb(177, 184, 0);
+    --platinum: RGB(172,175,172);
+    --blue-platinum: rgb(186, 255, 250);
+}
+  
+body {
+    background: radial-gradient(circle, var(--light-brown), var(--brown));
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: var(--platinum);
+    margin-top: 5rem;
+}
+
+.card {
+    margin-top: 3rem;
+    width: 80%;
+    border: 1px solid var(--platinum);
+    border-radius: 8px;
+    box-shadow: 0 0 4px 1px var(--blue-platinum);
+    padding: 16px;
+    background-color: var(--brown);
+    text-shadow: 0 0 4px black;
+}
+  
+.card-header {
+    background-image: linear-gradient(to top, var(--brown), var(--ultra-brown));
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 0.2px var(--blue-platinum);
+}
+  
+.card-body {
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+  
+.card + .card {
+    margin-top: 16px;
+}
+  
