@@ -21,7 +21,7 @@ const Input: React.FC<IInput> = ({
   return (
     <div>
       <label>{label}</label>
-          <input type={type} {...register(name, rules)} style={{backgroundColor: 'RGB(35, 31, 16)'}} />
+          <input type={type} {...register(name, rules)} style={{backgroundColor: 'RGB(35, 31, 16)', color: 'white'}} />
       {error && <p style={{ color: 'red' }}>{error.message}</p>}
     </div>
   );

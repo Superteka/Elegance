@@ -3,7 +3,7 @@ import Description from './Description'
 import './AboutStyle.css'
 import Header from '../../components/header/Header'
 import Info from './Info'
-import img from '../../assets/background-card.jpg'
+import profile from '../../assets/profile.jpg'
 
 const About: React.FC = () => {    
   return (
@@ -15,7 +15,7 @@ const About: React.FC = () => {
         </div>
         
         <div className='card-info'>
-          <img src={img} alt="" />
+          <img src={profile} alt="profile" />
           <Info />
         </div>  
       </div>

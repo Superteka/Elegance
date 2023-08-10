@@ -55,13 +55,16 @@ const Product: React.FC = () => {
       if (elegance && elegance.products) {
           const product = elegance.products.find((product: any) => product.id === productId);
 
-        if (elegance.products) { setElegance(elegance.products) }
+        if (elegance.products) {
+          const filteredProducts = elegance.products.filter((product: any) => product.id !== productId)
+          setElegance(filteredProducts)
+        }
           
         if (product) { setProduct(product) } 
       }
     });
   }, [productId]);
-    console.log(elegance)
+
     return (
       !elegance.length ? (  
         <>

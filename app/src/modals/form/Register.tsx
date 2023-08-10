@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import { useForm, SubmitHandler, DeepMap, FieldError } from "react-hook-form";
 import Input from "../../components/input/Input";
 import './RegisterStyle.css'
+import { addFormData, getFormDataArray } from "./FormData";
 
 interface IRegister {
   isOpen: boolean;
@@ -51,10 +52,11 @@ const RegisterModal: React.FC<IRegister> = ({ isOpen }) => {
     }, 2000);
   };
 
-  const onSubmit: SubmitHandler<{ name: string; email: string; phone: string; }> = () => {
+  const onSubmit: SubmitHandler<{ name: string; email: string; phone: string; }> = (data) => {
     if (errors.name || errors.email) {
       setSuccessMessage('');
     } else {
+      addFormData(data)
       setSuccessMessage(`${name}, seu cadastro foi realizado com sucesso`);
       closeModalAfterDelay();
     }
@@ -75,6 +77,8 @@ const RegisterModal: React.FC<IRegister> = ({ isOpen }) => {
     setValue("phone", '');
   };
 
+  console.log(getFormDataArray())
+  
   return (
     <Modal
       isOpen={modalIsOpen}

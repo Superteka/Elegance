@@ -53,7 +53,7 @@ strong {
 }
 
 .card-info img{
-  width: 95%;
+  width: 50%;
   height: 35rem;
   border-radius: 0.35rem;
   border: 1px solid var(--platinum);
@@ -61,8 +61,25 @@ strong {
 
 .info-container {
   display: flex;
-  margin-left: 2rem;
+  justify-content: right;
+}
+
+.name-and-years-container {
+  position: absolute;
+  margin-right: 3rem;
+}
+
+.email-container {
+  margin-top: 1.1rem; 
+  margin-right: 1rem;
+  display: flex;
   justify-content: space-between;
+}
+
+.container-img {
+  width: 95%;
+  border-radius: 0.35rem;
+  border: 1px solid var(--platinum);
 }
 
 h6 {
@@ -74,4 +91,26 @@ h6 {
 .tooltip {
   color: var(--platinum);
   margin-top: 2px;
+}
+
+.description-info-container {
+  color: var(--platinum);
+  background-color: var(--light-brown);
+  text-align: center;
+  border: 1px solid var(--platinum);
+  box-shadow: 0 0 3px var(--blue-platinum);
+  border-radius: 0.35rem;
+  position: absolute;
+  margin-left: 2rem;
+  padding: 1rem;
+  width: 14%;
+  margin-top: -37.6rem;
+}
+
+.description-info-header {
+  width: 90%;
+}
+
+.description-info-header, h3 {
+  font-size: 2rem;
 }

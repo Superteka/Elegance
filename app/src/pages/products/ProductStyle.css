@@ -1,5 +1,5 @@
 :root {
-  --sun: rgb(255, 167, 43);
+  --brown: rgb(35, 31, 16);
   --platinum-light: rgb(227, 249, 227);
   --platinum: RGB(172,175,172);
   --gold: RGB(132, 129, 22);
@@ -27,7 +27,7 @@
     margin-left: -7rem; 
     width: 18rem;
     font-size: 2rem;
-    color: var(--platinum);
+    color: var(--brown);
     text-shadow: 0 0 2px var(--platinum-light);
   }
   

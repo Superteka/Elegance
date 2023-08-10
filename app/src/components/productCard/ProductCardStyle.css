@@ -29,6 +29,7 @@
     text-shadow: 0 0 3px whitesmoke;
     margin-bottom: 0.5rem;
     letter-spacing: 1.5px;
+    font-size: 2rem;
 }
 
 .product-card-body {
@@ -36,8 +37,8 @@
 }
 
 .product-card img {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     margin: auto;
     margin-bottom: 16px;
     box-shadow: 0 0 5px 1px var(--blue-platinum);
